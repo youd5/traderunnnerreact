@@ -1,0 +1,10 @@
+.offerings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Optional: adds space between the cards */
+  }
+  h1 {
+    margin: 2rem;
+    margin-bottom: 2rem; /* Adds 2rem of space below the H1 */
+  }
