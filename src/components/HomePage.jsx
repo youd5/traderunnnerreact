@@ -49,13 +49,8 @@ const HomePage = () => {
   return (
     <main className="pt-24">
       {/* Hero Section */}
-      <div className="relative h-[85vh] w-full flex items-center justify-center text-white text-center">
-        <img
-          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&auto=format&fit=crop&q=80"
-          alt="Indian Stock Market Dashboard"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div className="relative h-[42.5vh] w-full flex items-center justify-center text-white text-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black z-0"></div>
         <div className="relative z-20 max-w-4xl mx-auto px-6">
           <h1 className="text-5xl md:text-7xl font-serif font-semibold leading-tight tracking-wide mb-6">
             Indian Stock Market Intelligence

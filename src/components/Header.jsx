@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,8 +50,11 @@ const Header = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 w-full bg-white z-50 shadow-md">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <Link to="/" className="text-3xl font-serif font-bold text-gray-800">
-            StockTracker.
+          <Link to="/" className="flex items-center space-x-3">
+            <Logo className="h-10 w-10" />
+            <span className="text-2xl font-serif font-bold text-gray-800">
+              TradeCodeRun
+            </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8 text-lg font-semibold text-gray-600">
             <Link to="/" className={navLinkClass('/')}>Dashboard</Link>

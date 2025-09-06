@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Logo and About */}
         <div>
-          <h3 className="text-3xl font-serif font-bold text-white mb-4">StockTracker.</h3>
+          <h3 className="text-3xl font-serif font-bold text-white mb-4">Trade Code Run</h3>
           <p className="text-sm leading-relaxed">
             Advanced stock market analysis and tracking platform for smart investors.
           </p>
