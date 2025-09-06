@@ -1,8 +1,14 @@
-body, #root {
-  margin: 0;
-  padding: 0;
-}
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind base;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind components;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind utilities;
 
+/* Additional custom styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,10 +36,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f4f4f9; /* A pleasing light gray */
 }
 
 h1 {

@@ -1,23 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* This is a best practice to ensure padding doesn't affect element width */
-}
-body, #root, .App {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-}
 #root {
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
-/* Add this to prevent content from being hidden behind the sticky header */
-.App {
-  /* padding-top: 60px; /* Adjust this value to match the height of your header */
   text-align: center;
 }
 

@@ -1,24 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
 import Header from './components/Header';
-import CourseDetails from './pages/CourseDetails';
-import AboutPage from './pages/AboutPage'; // Import the new pages
-import ContactPage from './pages/ContactPage';
-import './App.css'; // You can add your own styles here
+import Footer from './components/Footer';
+import HomePage from './components/HomePage';
+import PortfolioPage from './components/PortfolioPage';
 
-function App() {
+const App = () => {
   return (
-      <div className="App">
+    <Router>
+      <div className="bg-white text-gray-800 font-sans">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/course/:id" element={<CourseDetails />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
+        <Footer />
       </div>
+    </Router>
   );
-}
+};
 
 export default App;
